@@ -1,0 +1,41 @@
+{
+  "name": "genpark-autonomous-agent-goal-decomposer-execution-planner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous agent goal decomposer that breaks high-level objectives into tool-assigned subgoals with critical path planning and human checkpoints.",
+  "author": "genpark",
+  "category": "agents",
+  "tags": [
+    "autonomous-agent",
+    "goal-decomposition",
+    "agentic-planning",
+    "superagi",
+    "multi-step-agents"
+  ],
+  "inputs": {
+    "high_level_goal": {
+      "type": "string"
+    },
+    "available_tools": {
+      "type": "array"
+    },
+    "agent_persona": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "decomposed_subgoals": {
+      "type": "array"
+    },
+    "critical_path": {
+      "type": "array"
+    },
+    "estimated_total_steps": {
+      "type": "integer"
+    },
+    "human_checkpoint_required": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
